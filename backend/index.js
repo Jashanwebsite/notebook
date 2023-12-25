@@ -5,7 +5,7 @@ require("dotenv").config();
 console.log(process.env.MongoUri)
 connectToMongo();
 const app = express()
-const port = process.env.port
+const port = process.env.port || 8000
 
 app.use(cors())
 app.use(express.json())

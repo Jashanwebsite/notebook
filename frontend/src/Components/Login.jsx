@@ -4,7 +4,7 @@ import "./login-signup.css"
 import { Link, useNavigate } from "react-router-dom";
 function Login() {
     let navigate = useNavigate("")
-    const host = "http://localhost:5000"
+    const host = "https://backend-q3ol.onrender.com"
    const[credential,setcredentials] =  useState({email:"",password:""})
     const handelclick = async(e) => {
         e.preventDefault();

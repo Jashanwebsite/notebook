@@ -5,7 +5,7 @@ import noteContext from "./notecontext";
 
 const Notestate = (props) => {
   const [newclass,setnewclass] = useState(false)
-  const host = "http://localhost:5000"
+  const host = "https://backend-q3ol.onrender.com"
   const noteinitial = [
   ]
   const [notes, setnotes] = useState(noteinitial)
