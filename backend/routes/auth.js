@@ -48,7 +48,7 @@ router.post('/createuser', [
 
   } catch (error) {
     console.error(error);
-    res.status(500).send("their is a problem in create user");
+    res.status(500).send(error);
   }
 })
 
