@@ -76,24 +76,8 @@ const Notestate = (props) => {
     }setnotes(newnote)
 
   }
-  const fullnotes = async ({ id, tag, description, title, tru }) => {
-    tru = false;
-    for (let index = 0; index < notes.length; index++) {
-      const element = notes[index];
-      if (element._id == id) {
-        console.log(element);
-        id= element._id
-        tag = element.tag;
-        title = element.title;
-        description = element.description;
-        tru = true;
-        break;
-      }
-    }
-    return { id,tag, title, description, tru };
-  };
   return (
-    <noteContext.Provider value={{fullnotes,notes, setnotes, addnote, editnote, Deletenote, getnote,newclass,setnewclass }}>
+    <noteContext.Provider value={{notes, setnotes, addnote, editnote, Deletenote, getnote,newclass,setnewclass }}>
       {props.children}
     </noteContext.Provider>
   )
