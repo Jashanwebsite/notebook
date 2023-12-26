@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom'
 function Signup() {
     let navigate = useNavigate("")
-    const host = "https://backend-q3ol.onrender.com"
+    const host = "https://backen-inotebook.onrender.com"
    const[credential,setcredentials] =  useState({email:"",password:"",name:""})
     const handelclick = async(e) => {
         e.preventDefault();
